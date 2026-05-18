@@ -56,7 +56,7 @@ Borochi rendert daraus 4 Tageszeit-Varianten automatisch:
 - 🌇 Sunset (orange-tint)
 - 🌙 Night (cool-blue + dimmed)
 
-<!-- TODO: Screenshot Hero-Banner mit Hausfoto -->
+![Wetter-Page mit Hausfoto, Sonnenbahn und PV-Prognose](../assets/images/borochi-06-wetter.png){ width=1200 }
 
 ## PV-Prognose anpassen
 

@@ -4,7 +4,7 @@ Solinteg ist ein **chinesischer OEM** — die offizielle Modbus-Map ist begrenzt
 dokumentiert und kann zwischen Firmware-Versionen variieren. Der **Modbus-Sniffer**
 ist Borochis Werkzeug, um **selbst auf Entdeckungsreise** zu gehen.
 
-<!-- TODO: Screenshot Datenpunkte-Page mit Sniffer-UI -->
+![Datenpunkte-Page mit Modbus-Sniffer-UI und 140 bekannten Registern](../assets/images/borochi-08-datenpunkte.png){ width=1200 }
 
 ## Wann brauche ich den?
 

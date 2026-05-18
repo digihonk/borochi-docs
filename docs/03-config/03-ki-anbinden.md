@@ -70,7 +70,7 @@ Auf der KI-Page kannst du den Autopilot in 4 Modi konfigurieren:
 Empfehlung am Anfang: **Beobachten** für ein paar Wochen, damit du siehst,
 was die KI vorschlägt, bevor du sie auf "Aktiv" lässt.
 
-<!-- TODO: Screenshot KI-Page Mode-Picker -->
+![KI-Page mit Autopilot, 5 Strategien (Kostenoptimiert / Autark / Vollautark / Komfort / Eco-CO2) und KI-Gedächtnis mit erkannten Mustern](../assets/images/borochi-07-ki.png){ width=1200 }
 
 ## Modbus-Sniffer-Identify
 

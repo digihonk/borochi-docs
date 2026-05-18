@@ -3,8 +3,7 @@
 **Premium-Dashboard für deine Solinteg-PV-Anlage.**
 Tesla Mission Control × SpaceX Cockpit × Apple Pro Display — für deine eigene Solar-Anlage zu Hause.
 
-<!-- TODO: Hero-Screenshot vom Live-Dashboard einfügen — Datei nach docs/assets/images/screenshot-overview.png, dann nächste Zeile uncomment -->
-<!-- ![Borochi Dashboard](assets/images/screenshot-overview.png){ width=1200 } -->
+![Borochi Dashboard — Echtzeit-Übersicht mit Hausfoto + Energie-Flow](assets/images/borochi-01-uebersicht.png){ width=1200 }
 
 ## Was ist das?
 

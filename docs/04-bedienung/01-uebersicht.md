@@ -3,7 +3,7 @@
 Die **Übersichts-Seite** ist deine erste Anlaufstelle: ein cinematic Hero
 oben + Live-Werte aller wichtigen Größen drunter.
 
-<!-- TODO: Großer Screenshot der Übersichts-Page -->
+![Übersicht-Page mit Hero, KPI-Topbar und Live-Cards](../assets/images/borochi-01-uebersicht.png){ width=1200 }
 
 ## Layout
 

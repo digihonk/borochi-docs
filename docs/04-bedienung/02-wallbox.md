@@ -4,7 +4,7 @@ Die **Wallbox-Page** ist Borochis Live-Charging-Cockpit. Hier siehst du
 auf einen Blick, was dein Auto gerade tut, und kannst zwischen 5 Lademodi
 wechseln.
 
-<!-- TODO: Screenshot Wallbox-Page Cockpit -->
+![Wallbox Live-Cockpit mit SoC, Power-Ring, 3-Phasen-Strips und 5 Lade-Modi](../assets/images/borochi-05-wallbox.png){ width=1200 }
 
 ## Cockpit-Aufbau
 
