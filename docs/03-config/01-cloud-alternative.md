@@ -1,51 +1,44 @@
-# Borochi-Cloud (Alternative)
+# Hosting-Optionen
 
-<!-- TODO: Cloud-Angebot konkretisieren wenn die Cloud-Variante live ist -->
+Es gibt zwei Wege, Borochi laufen zu lassen — beide selbst-gehostet,
+keine Cloud-Anbindung, keine Daten verlassen dein Heimnetz.
 
-Falls du dir den **Bridge-Server-Teil sparen** möchtest, planen wir eine
-**Borochi-Cloud**, bei der wir den Bridge-Server für dich betreiben.
+## Vergleich
 
-## Was Borochi-Cloud erledigt
-
-- Bridge-Service inkl. Updates, Backups, HTTPS
-- Frontend immer auf neuester Version
-- Hetzner-Hosting in Deutschland (DSGVO-konform)
-- Verschlüsselte Speicherung deiner HA-Tokens & Settings
-- Auto-Renew der TLS-Zertifikate
-
-## Was du selbst behältst
-
-- **Agent läuft bei dir zuhause** — deine Modbus-Daten verlassen dein
-  LAN nur als zusammenfassende Werte (kWh-Zähler etc.), nicht als
-  einzelne Register.
-- **Hardware** (Waveshare-Bridges) komplett bei dir.
-- **Daten-Hoheit** — Export jederzeit als SQLite-DB + JSON.
-
-## Preise (geplant)
-
-<!-- TODO: Preise finalisieren -->
-
-| Tier | Preis | Was drin |
+| Aspekt | Pi-Image | Selfhost-Server |
 |---|---|---|
-| Family | ~5 €/Monat | bis 4 Wechselrichter, bis 5 User |
-| Pro | ~15 €/Monat | bis 10 WR, unbegrenzte User, Priority-Support |
+| **Aufwand** | SD-Karte flashen, ~5 Min | VPS aufsetzen, ~30 Min |
+| **Hardware** | Raspberry Pi (~80 €) | NAS/VM/VPS (eh schon vorhanden oder ~5 €/Monat) |
+| **Updates** | `sudo borochi-update` auf dem Pi | `docker compose pull` auf dem Server |
+| **Skalierung** | bis ~4 WR komfortabel | unbegrenzt |
+| **HTTPS extern** | optional via Cloudflare Tunnel | Let's Encrypt direkt |
+| **Backup-Strategie** | SD-Karte stirbt nach 1-2 Jahren | RAID-NAS, Hyper Backup, etc. |
 
-## Wie melde ich mich an?
+## Empfehlung
 
-<!-- TODO: Sign-Up-Flow ausarbeiten, wenn Cloud live ist -->
+- **Pi-Image** wenn du anfängst — schnellster Weg ins Dashboard,
+  läuft alles vorkonfiguriert ([Schnellweg-Anleitung](../02-software/00-image-flash.md))
+- **Selfhost-Server** wenn dir der Pi zu klein wird, du eh eine NAS
+  hast, oder du das Dashboard von außerhalb erreichen willst
+  ([Server-Anleitung](../02-software/01-bridge-server.md))
 
-Wenn die Cloud live ist (geplant Q3/2026):
-1. Account auf [cloud.borochi.io](https://cloud.borochi.io) anlegen
-2. Pairing-Code generieren
-3. Auf deinem Agent als `BOROCHI_BRIDGE_URL=wss://cloud.borochi.io/ws/agent` + Token eintragen
-4. Fertig — kein eigener Server nötig.
+## Wechseln vom Pi zum Server
 
-## Cloud-Migration aus Selfhost-Setup
+Wenn du später umsteigen willst:
 
-Wenn du erst selfhostest und später wechseln willst:
+1. **Auf dem Pi:** Settings → Erweitert → "Vollständiger Export" → JSON-Datei runterladen
+2. **Auf dem neuen Server:** Server-Setup gemäß Anleitung
+3. **Im neuen Dashboard:** Settings → Erweitert → "Import" → JSON-Datei hochladen
+4. Agent neu pairen (Pi pairen erfolgte gegen den alten Bridge-Server)
 
-1. Settings → Export → "Vollständiger Export" (JSON + DB)
-2. In der Cloud-Instanz Settings → Import → Datei hochladen
-3. Agent umkonfigurieren auf neue Bridge-URL + neuen Token
+Deine Daten sind dadurch nicht verloren — die Bridge-DB ist eine simple
+SQLite-Datei, du kannst sie auch direkt kopieren wenn du genau weißt was
+du tust.
 
-→ **Weiter mit konkreten Anbindungen: [Wetter](02-wetter.md)**
+## Borochi-Cloud?
+
+**Nein.** Borochi ist ein **privates Reverse-Engineering-Projekt** von Marcel
+Ebbert — es gibt keine kommerzielle Cloud, keine Subscription, keine
+zentral gehostete Variante. Du bleibst Herr deiner Daten und deiner
+Wechselrichter. Falls dir die Selfhost-Welt zu groß ist, ist das Pi-Image
+die einfachste Lösung — flashen, fertig.

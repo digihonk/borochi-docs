@@ -30,7 +30,7 @@ Es läuft lokal, ohne Cloud-Zwang, und greift direkt per **Modbus-TCP** auf dein
 | **BES-H2 Batteriespeicher** (1× oder 2×) | du hast schon |
 | **Waveshare RS485-to-ETH Bridge** (1 pro Wechselrichter) | ~30 € pro Stück |
 | **Synology NAS** oder Raspberry Pi für den Agent | du hast schon |
-| **Eigener kleiner Server / VPS** für die Bridge | ~5 €/Monat oder Borochi-Cloud |
+| **Eigener kleiner Server / VPS** für die Bridge (optional) | ~5 €/Monat |
 | **Domain mit HTTPS** (z.B. home.dein-name.de) | optional |
 | **Etwas Linux-Mut** | wird belohnt 💪 |
 
@@ -42,11 +42,13 @@ Es läuft lokal, ohne Cloud-Zwang, und greift direkt per **Modbus-TCP** auf dein
 4. **[Bedienung](04-bedienung/01-uebersicht.md)** — Alles was du im Dashboard tun kannst
 5. **[Troubleshooting](05-troubleshooting/01-faq.md)** — wenn was nicht läuft
 
-## Demo & Screenshots
+## Demo-Modus
 
-<!-- TODO: Demo-Link einfügen (demo.borochi.io read-only) -->
-
-Schau dir das Live-Dashboard mit Demo-Daten an: **<https://demo.borochi.io>** *(geplant)*
+Du brauchst keine Hardware um Borochi auszuprobieren — das Dashboard hat einen
+**eingebauten Demo-Modus**, der mit simulierten Daten alle Pages füllt. Wenn
+du das Image auf einem Pi flashst und noch keine Waveshare-Bridge angeschlossen
+hast, läuft es automatisch in Demo. Im Dashboard unten links siehst du dann
+den 🟡 **Demo-Modus**-Pill.
 
 ## Lizenz & Support
 

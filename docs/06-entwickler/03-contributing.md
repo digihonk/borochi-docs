@@ -130,7 +130,7 @@ Mehr automatisierte E2E-Tests sind in Arbeit (Playwright).
 
 - **Issues**: [GitHub Issues](https://github.com/digihonk/Home/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/digihonk/Home/discussions)
-- **Security**: bitte privat per Mail an <security@borochi.io> *(geplant)*
+- **Security**: bitte privat per [GitHub Security Advisory](https://github.com/digihonk/borochi-docs/security/advisories/new) statt öffentliches Issue
 
 <!-- TODO: License-Datei + Code-of-Conduct ergänzen -->
 

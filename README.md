@@ -72,7 +72,7 @@ Marcel: Wirf während der Verkabelung einfach Fotos nach `docs/01-hardware/fotos
 
 ## Was später noch dazu kommt
 
-- [ ] Hosting: `docs.borochi.io` via GitHub Pages oder Hetzner-Static
+- [x] Hosting: GitHub Pages → `https://digihonk.github.io/borochi-docs/`
 - [ ] Versions-Switcher (v2.25, v3.0, …)
 - [ ] Such-Funktion mit Algolia DocSearch
 - [ ] Dark-Mode-Screenshots

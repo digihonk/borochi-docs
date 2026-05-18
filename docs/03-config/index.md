@@ -22,9 +22,9 @@ Nicht zwingend. Aber unsere Empfehlung:
 3. **KI als drittes** — wenn du Lust auf Autopilot hast oder Modbus-Sniffer mit KI nutzen willst.
 4. **Home Assistant** — wenn du HA für andere Smart-Home-Sachen nutzt.
 
-## Borochi-Cloud als Alternative
+## Wo soll Borochi laufen?
 
-Wenn dir das alles zu viel Eigenbetrieb ist, gibt's (geplant) eine
-[Borochi-Cloud](01-cloud-alternative.md), die das meiste für dich erledigt.
+Pi-Image oder eigener Server — Vergleich + Empfehlung im Kapitel
+[Hosting-Optionen](01-cloud-alternative.md).
 
 → **Empfehlung: starte mit [Wetter](02-wetter.md)**

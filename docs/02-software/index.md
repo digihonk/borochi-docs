@@ -13,7 +13,7 @@ flowchart LR
 
 | Komponente | Wo läuft sie? | Was macht sie? |
 |---|---|---|
-| **Bridge** (FastAPI) | Eigener Server oder Borochi-Cloud | Auth, User-Management, KI, Tibber, HA-Push, speichert Daten |
+| **Bridge** (FastAPI) | Pi-Image oder eigener Server | Auth, User-Management, KI, Tibber, HA-Push, speichert Daten |
 | **Agent** (Python) | NAS oder Raspberry Pi, **im gleichen LAN** wie Waveshare | Pollt Modbus, leitet an Bridge, schreibt Befehle zurück |
 | **Frontend** (HTML/JS) | Statisch von der Bridge oder beliebigem Webspace | Das schöne Dashboard, was du im Browser siehst |
 
@@ -46,15 +46,10 @@ flowchart LR
 4. [Nginx + HTTPS](04-nginx-config.md) — Reverse-Proxy für deine Domain
 5. [First-Run-Wizard](05-first-run-wizard.md) — beim ersten Öffnen Admin anlegen
 
-## Alternativ: Borochi-Cloud nutzen
-
-<!-- TODO: Borochi-Cloud-Setup fertig dokumentieren -->
-
-Wenn du dir den eigenen Server-Teil sparen willst, gibt's (geplant) eine
-**Borochi-Cloud**: du legst nur den Agent auf deiner NAS an, alles andere
-kommt von uns. Pricing: kleine monatliche Pauschale, kein Vendor-Lock-In —
-deine Daten kannst du jederzeit exportieren.
-
-→ Details im Kapitel [3. Konfiguration → Borochi-Cloud-Alternative](../03-config/01-cloud-alternative.md)
+!!! info "Keine Cloud"
+    Borochi ist ein **privates Reverse-Engineering-Projekt** — es gibt
+    keine zentrale Cloud, keine Subscription. Beide Wege sind selbst-gehostet,
+    deine Daten bleiben bei dir.
+    Vergleich der beiden Wege: [Hosting-Optionen](../03-config/01-cloud-alternative.md).
 
 → **Los geht's mit dem [Bridge-Server](01-bridge-server.md)**
