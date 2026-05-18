@@ -23,7 +23,7 @@ Settings → Benutzer → **+ Neuer Benutzer**:
 | TOTP | Pflicht für Admin, optional für andere |
 | Recovery-Code | wird beim Anlegen einmal angezeigt |
 
-<!-- TODO: Screenshot User-Anlage-Dialog -->
+![Settings-Page mit Benutzer-Verwaltung, HA-Sync, KI-Anbieter und Wallbox-Konfiguration](../assets/images/borochi-13-einstellungen.png){ width=1200 }
 
 ## Login + 30-Tage-Sessions
 
