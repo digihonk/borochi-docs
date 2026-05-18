@@ -1,0 +1,120 @@
+site_name: Borochi Home Command Center
+site_description: Premium-Dashboard für Solinteg BHW-10 + BES-H2 PV-Anlagen (privates Reverse-Engineering von Marcel Ebbert)
+site_author: Marcel Ebbert
+site_url: https://digihonk.github.io/borochi-docs/
+
+# Repo-Link in der oberen Bar
+repo_url: https://github.com/digihonk/borochi-docs
+repo_name: digihonk/borochi-docs
+edit_uri: edit/main/docs/
+
+# Material-Theme — Dark Mode, gleicher Vibe wie das Dashboard
+theme:
+  name: material
+  language: de
+  palette:
+    - scheme: slate
+      primary: amber
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Helles Theme
+    - scheme: default
+      primary: amber
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Dunkles Theme
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+  logo: assets/images/logo.png
+  favicon: assets/images/favicon.png
+
+nav:
+  - Start: index.md
+  - 1. Hardware:
+    - Übersicht: 01-hardware/index.md
+    - Einkaufsliste: 01-hardware/01-bom.md
+    - Waveshare-Setup: 01-hardware/02-waveshare-setup.md
+    - Verkabelung BHW-10: 01-hardware/03-verkabelung.md
+    - Modbus-TCP-Test: 01-hardware/04-modbus-test.md
+  - 2. Software:
+    - Übersicht: 02-software/index.md
+    - Schnellweg Pi-Image: 02-software/00-image-flash.md
+    - Bridge-Server: 02-software/01-bridge-server.md
+    - Bridge installieren: 02-software/02-bridge-docker.md
+    - Agent auf NAS: 02-software/03-agent-nas.md
+    - Nginx + HTTPS: 02-software/04-nginx-config.md
+    - First-Run-Wizard: 02-software/05-first-run-wizard.md
+  - 3. Konfiguration:
+    - Übersicht: 03-config/index.md
+    - Borochi-Cloud (Alternative): 03-config/01-cloud-alternative.md
+    - Wetter (Open-Meteo): 03-config/02-wetter.md
+    - KI anbinden: 03-config/03-ki-anbinden.md
+    - Tibber Strompreise: 03-config/04-tibber.md
+    - Home Assistant: 03-config/05-home-assistant.md
+  - 4. Bedienung:
+    - Übersicht-Page: 04-bedienung/01-uebersicht.md
+    - Wallbox steuern: 04-bedienung/02-wallbox.md
+    - Modbus-Sniffer: 04-bedienung/03-modbus-sniffer.md
+    - Multi-User: 04-bedienung/04-multi-user.md
+  - 5. Troubleshooting:
+    - FAQ: 05-troubleshooting/01-faq.md
+    - Bridge startet nicht: 05-troubleshooting/02-bridge-startup.md
+    - Agent verbindet nicht: 05-troubleshooting/03-agent-connect.md
+    - Modbus antwortet nicht: 05-troubleshooting/04-modbus-no-response.md
+  - 6. Entwickler:
+    - Architektur: 06-entwickler/01-architektur.md
+    - API-Reference: 06-entwickler/02-api-reference.md
+    - Contributing: 06-entwickler/03-contributing.md
+
+plugins:
+  - search:
+      lang: de
+  # - mkdocs-material wird automatisch geladen
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.snippets
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/digihonk/Home
+  generator: false
+
+copyright: >
+  Copyright © 2026 Marcel Ebbert —
+  Reverse-engineered für Solinteg-Liebhaber.
+  Kein offizielles Borochi-Produkt.
